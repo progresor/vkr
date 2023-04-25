@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link type="text/css" href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <meta content="text/html; charset=utf-8">
+
+    <title>
+      Прогноз соотношения "матрица-наполнитель"
+    </title>
+    
+  </head>
+<body>
+
+  <div id="title">
+    <h2>Прогноз соотношения "матрица-наполнитель"</h2>
+  </div>
+
+  <div id="form">
+    <h3>Введите данные</h3>
+
+    <form action="" method="post">
+
+      <ul class="parameters">
+        <li>
+          <label for="param1">Плотность, кг/м3</label>
+          <input type="float" name="param1" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param2">Модуль упругости, ГПа</label>
+          <input type="float" name="param2" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param3">Количество отвердителя, м.%</label>
+            <input type="float" name="param3" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param4">Содержание эпоксидных групп,%_2</label>
+          <input type="float" name="param4" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param5">Температура вспышки, С_2</label>
+          <input type="float" name="param5" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param6">Поверхностная плотность, г/м2</label>
+          <input type="float" name="param6" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param7">Модуль упругости при растяжении, ГПа</label>
+          <input type="float" name="param7" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param8">Прочность при растяжении, МПа</label>
+            <input type="float" name="param8" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param9">Потребление смолы, г/м2</label>
+          <input type="float" name="param9" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param10">Угол нашивки, град</label>
+          <input type="float" name="param10" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param11">Шаг нашивки</label><br>
+          <input type="float" name="param11" placeholder="Введите число" value="0">
+        </li>
+
+        <li>
+          <label for="param12">Плотность нашивки</label>
+          <input type="float" name="param12" placeholder="Введите число" value="0">    
+        </li>
+
+        <div id="reg">
+        
+          <input type="submit" value="Получить прогноз" >   
+        
+        </div>
+
+      </ul>
+
+   
+
+    </form>
+
+
+  <div id="result">
+      {% if message %}
+        <p>{{ message }}</p>
+      {% endif %}    
+  </div>
+
+
+</body>
+
+</html>
