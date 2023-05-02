@@ -16,10 +16,10 @@
 
   <div id="title">
     <h2>Прогноз соотношения "матрица-наполнитель"</h2>
+    <h3>Введите данные:</h3>
   </div>
 
   <div id="form">
-    <h3>Введите данные</h3>
 
     <form action="" method="post">
 
@@ -75,7 +75,7 @@
         </li>
 
         <li>
-          <label for="param11">Шаг нашивки</label><br>
+          <label for="param11">Шаг нашивки</label>
           <input type="float" name="param11" placeholder="Введите число" value="0">
         </li>
 
@@ -85,22 +85,28 @@
         </li>
 
         <div id="reg">
+
+          
         
           <input type="submit" value="Получить прогноз" >   
         
         </div>
 
-      </ul>
-
-   
+      </ul>   
 
     </form>
-
 
   <div id="result">
       {% if message %}
         <p>{{ message }}</p>
-      {% endif %}    
+      {% endif %}
+      
+      <div class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+      </div>
+      
   </div>
 
 
