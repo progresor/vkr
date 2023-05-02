@@ -26,11 +26,19 @@ def app_calculation():
     message = ''
     if request.method == 'POST':
         
-        for i in range(1,13,1):
+        for i in range(1, 13):
             param = request.form.get(f'param{i}')
-            param_lst.append(float(param))
+            try:
+                param_lst.append(float(param))
+            except ValueError:
+                break
             
-        message = set_params(*param_lst)
+        if len(param_lst) == 12:
+            message = set_params(*param_lst)
+        else:
+            message = 'Введите числовое значение'
+
+
 
     return render_template('template1.html', message=message) 
 
