@@ -1,6 +1,6 @@
 # Выпускная квалификационная работа
 
-![<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png" width="40" />
+![<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png" style="max-width: 50%; />
 ](https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png)
 
 ## Разведочный анализ  данных
