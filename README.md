@@ -1,7 +1,6 @@
-# Выпускная квалификационная работа
-
-![<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png" style="max-width: 50%; />
-](https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png)
+# Выпускная квалификационная работа  
+## Прогнозирование конечных свойств новых материалов (композиционных материалов)
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Composite_3d.png" align="center" height=50% width=300 ></a>   
 
 ## Разведочный анализ  данных
 
