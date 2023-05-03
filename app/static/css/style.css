@@ -13,10 +13,6 @@ h2, h3, h4 {
 	margin: 0;
 }
 
-
-
-
-
 #title {
 	margin: 5px auto 2px auto;
 	padding-bottom: 10px;
@@ -69,7 +65,7 @@ li input:focus {
 }
 
 
-#reg {
+#predict {
 	padding: 4px 0;
 	text-align:center;
 }

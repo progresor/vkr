@@ -11,8 +11,8 @@
     <script>
         particlesJS.load("particles-js", "{{ url_for('static', filename='particles.json') }}",
         function(){
-        console.log("particles.json has loaded");
-    });
+          console.log("particles.json loaded");
+        });
     </script>
 
     
@@ -97,12 +97,8 @@
           <input type="float" name="param12" placeholder="Введите число" value="0">    
         </li>
 
-        <div id="reg">
-
-          
-        
+        <div id="predict">
           <input type="submit" value="Получить прогноз" >   
-        
         </div>
 
       </ul>   
